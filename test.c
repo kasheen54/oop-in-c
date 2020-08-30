@@ -46,7 +46,7 @@ int main() {
 
     // test values
     Value *val = value_new(TYPE_INT);
-    value_set_typed(val, TYPE_INT, (Any) 100);
+    value_set_typed(val, TYPE_INT, any(100));
     // value_set_typed(val, TYPE_DOUBLE, (Any) 0.3);
 
     assert (val->is_set);
